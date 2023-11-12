@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Formularz</title>
+   
+
+</head>
+
+<body class="tlo" >
+    <header>
+        <nav>
+            <section>
+                <div class="nawigacja">
+                    <div class="tekstwstep">
+                        <ul>
+                            <li>
+                                <a href="index.html">Strona Główna</a>
+                                <div class="submenu">
+                                    <ul>
+                                        <li><a href="ciekawostki.html">Ciekawostki</a></li>
+                                        <li><a href="https://pl.wikipedia.org/wiki/Kot_domowy" target="_blank">Więcej na
+                                                temat kotów</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+
+                            <li><a href="kotdomowy.html">Kot domowy</a></li>
+                            <li><a href="mojkot.html">Mój kot</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </nav>
+    </header>
+    <main>
+        <section class="podnav">
+            <div class="tekstform">
+                <h1>Dziękuję za wzięcie udziału w ankiecie !</h1>
+                <h2>Zapraszam do wypełniania!</h2>
+            </div>
+        </section>
+        <section>
+            <div class="podnav">
+                <div>
+                    <form action="odbierz.php" method="get" id="stronaformularzjs">
+                        <div>
+                            <label for="imie_wlasiciela">Imię właściciela:</label> <br>
+                            <input type="text" id="imie_wlasiciela" name="imie_wlasiciela" required>
+                        </div>
+                        <div>
+                            <label for="nazwisko_wlasiciela">Nazwisko właściciela:</label> <br>
+                            <input type="text" id="nazwisko_wlasiciela" name="nazwisko_wlasiciela" required>
+                        </div>
+                        <div>
+                            <label for="email">E-mail właściciela:</label> <br>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div>
+                            <label for="imie_kota">Imię kota:</label> <br>
+                            <input type="text" id="imie_kota" name="imie_kota" required>
+                        </div>
+                        <div>
+                            <p>Ile lat ma twój kot?</p>
+                            <label>
+                                <input type="radio" name="Wiek" value="mniej niż 3">
+                                mniej niż 3
+                            </label><br>
+                            <label>
+                                <input type="radio" name="Wiek" value="3-5">
+                                3-5
+                            </label><br>
+                            <label>
+                                <input type="radio" name="Wiek" value="5-10">
+                                5-10
+                            </label><br>
+                            <label>
+                                <input type="radio" name="Wiek" value="więcej niż 10">
+                                więcej niż 10
+                            </label><br>
+                        </div>
+                        <div>
+                            <label for="rasa_kota">Rasa kota:</label>
+                            <select id="rasa_kota" name="rasa_kota" required>
+                                <option value="">Wybierz rasę</option>
+                                <option value="Abisyński">Kot Abisyński</option>
+                                <option value="Bengalski">Kot Bengalski</option>
+                                <option value="Brytyjski">Kot Brytyjski</option>
+                                <option value="Maine Coon">Kot Maine Coon</option>
+                                <option value="Pers">Kot Pers</option>
+                                <option value="Ragdoll">Kot Ragdoll</option>
+                                <option value="Sfinks">Kot Sfinks</option>
+                                <option value="Tajski">Kot Tajski</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="inna_rasa">Inna rasa kota:</label> <br>
+                            <input type="text" id="inna_rasa" name="inna_rasa">
+                        </div>
+                        <div>
+                            <label for="zaszczepiony">Czy kot jest zaszczepiony?</label>
+                            <input type="checkbox" id="zaszczepiony" name="zaszczepiony" value="Tak">
+                        </div>
+                        <div>
+                            <label for="uwagi">Dodatkowe informacje o pupilu:</label> <br>
+                            <textarea id="uwagi" name="uwagi" rows="4" cols="50"></textarea>
+                        </div>
+                        <div>
+                            <input type="submit" value="Submit" onclick="zamknijankiete">
+                            <input type="reset" value="Reset">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <h6 class="tlo">Cyprian Hałas</h6>
+    </footer>
+</body>
+
+</html>
